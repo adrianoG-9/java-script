@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando valores</title>
+    <style>
+        body{
+            font: normal 18pt verdana; 
+        }
+        input{
+            font: normal 18pt verdana;
+            width:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>SOMANDO VALORES:</h1>
+
+    <input type="number" name="quadr1" id="quadr1"> +
+    <input type="number" name="quadr2" id="quadr2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="iresultado"></div>
+
+    <script>
+        function somar(){
+            let qd1=document.getElementById('quadr1')
+            let qd2=document.getElementById('quadr2')
+            let resultado=document.getElementById('iresultado')
+            let Nqd1=Number(qd1.value)
+            let Nqd2=Number(qd2.value)
+            let S = Nqd1 + Nqd2
+            resultado.innerHTML = `A soma entre ${Nqd1} e ${Nqd2} é igual a <strong>${S}</strong>`
+
+        }
+
+
+    </script>
+</body>
+</html>

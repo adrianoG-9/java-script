@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos Dom</title>
     <style>
+       
         div#area{
             font: normal 20pt verdana;
-            background-color: rgb(64, 154, 64);
+            background-color: #409a40;
             color: white;
             width: 200px;
             height: 200px;
             text-align: center;
             line-height: 200px;
         }
+       
     </style>
 </head>
 <body>
+    
     <div id="area"> 
         Interaja...
-    </div>
+    </div> 
     
     <script>
-        let div= document.getElementById('area')
+
+      let div= document.getElementById('area')
         div.addEventListener('click', clicker)
         div.addEventListener('mouseenter', enter)
         div.addEventListener('mouseout', saiu)
@@ -38,8 +42,9 @@
         }
         function saiu(){
             div.innerText= 'saiu..'
-            div.style.background='green'
+            div.style.background='#409a40'
         }
+       
 
     </script>
 </body>
